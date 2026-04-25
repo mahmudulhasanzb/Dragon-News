@@ -3,8 +3,12 @@ import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="h-[80vl] flex justify-center items-center flex-col gap-4">
-      <h2 className="font-bold text-5xl text-purple-500">NotFoundPage</h2>
+    <div className="h-[100vl] flex items-center flex-col gap-4 justify-center">
+      <h3 className="text-4xl font-bold">404</h3>
+      <h2 className="font-bold text-4xl text-purple-500">Page Not Found</h2>
+      <p className="text-lg text-purple-500">
+        Sorry, the page you are looking for does not exist.
+      </p>
       <Link href={'/'}>
         {' '}
         <button className="btn bg-purple-500 text-white">

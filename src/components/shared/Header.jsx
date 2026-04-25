@@ -15,7 +15,7 @@ const Header = () => {
         className="mx-auto"
       ></Image>
       <p className="text-xl font-semibold">Journalism</p>
-      <p className="text-xl font-semibold">
+      <p className="text-2xl">
         {' '}
         {format(new Date(), "EEEE, MMMM d, yyyy")} {' '}
       </p>
