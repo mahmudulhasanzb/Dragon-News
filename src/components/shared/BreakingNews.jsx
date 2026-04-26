@@ -1,5 +1,6 @@
 import React from 'react';
-// import Marquee from "react-fast-marquee"
+import Marquee from 'react-fast-marquee';
+
 
 const news = [
   {
@@ -18,11 +19,13 @@ const news = [
 
 const BreakingNews = () => {
   return (
-    <div className="flex justify-between gap-4 items-center bg-gray-200 py-4 container mx-auto px2">
+    <div className="flex justify-between gap-4 items-center bg-gray-200 py-4 px-2 container mx-auto px2">
       <button className="btn btn-secondary">Latest News</button>
-      <Marquee pauseOnHover={true}>
+      <Marquee pauseOnHover speed={50} className="text-black">
         {news.map(n => (
-          <span key={n.id}>{n.title}</span>
+          <span key={n.id} className="mr-10">
+            {n.title}
+          </span>
         ))}
       </Marquee>
     </div>
