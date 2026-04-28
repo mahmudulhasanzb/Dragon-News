@@ -5,6 +5,16 @@ import React from 'react';
 import { FaEye } from 'react-icons/fa';
 import { CiShare2, CiBookmark, IoIosStar } from 'react-icons';
 
+export const generateMetadata = async ({ params }) => {
+  const { id } = await params;
+  const news = await getNewsDetailsById(id);
+
+  return {
+    title: news.title,
+    description: post.details,
+  };
+};
+
 const NewsDetailsPage = async ({ params }) => {
   const { id } = await params;
   const news = await getNewsDetailsById(id);
@@ -56,7 +66,9 @@ const NewsDetailsPage = async ({ params }) => {
             </h2>
           </div>
           <Link href={`category/${news.category_id}`}>
-            <button className="btn btn-secondary">See other news of this category</button>
+            <button className="btn btn-secondary">
+              See other news of this category
+            </button>
           </Link>
         </div>
       </div>
