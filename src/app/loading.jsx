@@ -2,11 +2,9 @@ import React from 'react';
 
 const Loadingpage = () => {
   return (
-    <div className='flex h-[80vh] items-center justify-center'>
+    <div className="flex h-[80vh] items-center justify-center">
       Global
-      <Loading>
-        <span className="loading-dots loading-xl"></span>
-      </Loading>
+      <span className="loading-dots loading-xl"></span>
     </div>
   );
 };
