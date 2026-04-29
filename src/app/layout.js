@@ -1,21 +1,21 @@
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
-const popins = Poppins({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"]
 })
 
-export const monserat = Montserrat({
-  variable: "--font-montserat",
+export const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"]
 })
 
 export const metadata = {
-  title: "Gragon News",
-  description: "Dragor News - Best News Portal In Bangladesh",
+  title: "Dragon News",
+  description: "Dragon News - Best News Portal In Bangladesh",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme='light'
-      className={`${popins.className} h-full antialiased`}
+      className={`${poppins.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         {children}

@@ -1,10 +1,10 @@
 import Navbar from '@/components/shared/Navbar'
 import React from 'react'
-import { monserat } from '../layout'
+import { montserrat } from '../layout'
 
 const AuthLayout = ({children}) => {
   return (
-    <div className={`${monserat}`}>
+    <div className={`${montserrat.className} h-full antialiased`}>
       <Navbar />
       {children}
     </div>
